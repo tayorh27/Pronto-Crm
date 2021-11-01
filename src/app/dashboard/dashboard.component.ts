@@ -131,9 +131,19 @@ export class DashboardComponent implements OnInit, AfterViewInit {
     }
     return { i: index, e: found, l: length }
   }
+  setvk(s) {
+    s.name = "Jonh";
+    s.age = 15;
+    s.id = 100;
+    console.log(s)
+}
   ngOnInit() {
     // this.totalRows = this.datas.getMessage()
     // console.log(this.totalRows);
+    // const a = ['test1a', 'test2', 'test1b', 'test1c', 'test3'];//, ['Wrong answer', 'OK', 'Runtime error', 'OK', 'Time limit exceeded']
+    // console.log(a.splice(2,3))
+    
+   
 
     const email = localStorage.getItem('email')
     this.service.getUserData(email).then(user => {
@@ -150,6 +160,7 @@ export class DashboardComponent implements OnInit, AfterViewInit {
   }
 
   getQuestion(T:string[], R:string[]) {
+    T[Symbol.iterator]()
 
     const store = {};
     var n_ok_groups = 0;

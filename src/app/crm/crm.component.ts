@@ -159,7 +159,7 @@ export class CRMComponent implements OnInit {
   onConvoSelected(index:number) {
     this.selectedConversation = this.conversations[index]
     this.conversationSubject = this.selectedConversation.subject
-    location.href = "/crm#replyTo"
+    location.href = "/tickets#replyTo"
   }
 
   async reverseTicket() {

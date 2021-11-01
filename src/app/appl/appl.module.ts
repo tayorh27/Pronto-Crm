@@ -12,6 +12,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { ColorPickerModule } from 'ngx-color-picker';
 import { AppSettingsRoutes } from './appl.routing';
 import { StatusComponent } from './status/status.component';
+import { EmailSettingsComponent } from './email-settings/email-settings.component';
 
 @NgModule({
   imports: [
@@ -26,6 +27,7 @@ import { StatusComponent } from './status/status.component';
   ],
   declarations: [
     StatusComponent,
+    EmailSettingsComponent
   ]
 })
 

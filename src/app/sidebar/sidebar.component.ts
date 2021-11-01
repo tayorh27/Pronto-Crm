@@ -98,6 +98,7 @@ export const ROUTES: RouteInfo[] = [{
     collapse: 'appsettings',
     children: [
         { path: 'status', title: 'Status', display_title: 'Status', ab: 'S' },
+        { path: 'email-settings', title: 'Email Settings', display_title: 'Email Setting', ab: 'ES' },
     ]
 },
 // {
